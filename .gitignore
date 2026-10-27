@@ -1,0 +1,12 @@
+node_modules/
+.npm-cache/
+.env
+.env.*
+!.env.example
+frontend/dist/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+backend/tmp/
+!backend/tmp/.gitkeep

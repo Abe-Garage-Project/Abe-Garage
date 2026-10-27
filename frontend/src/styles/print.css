@@ -1,0 +1,24 @@
+@page {
+  size: A4;
+  margin: 12mm;
+}
+@media print {
+  .site-header,
+  .site-footer,
+  .admin-menu,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  .print-document {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+  .page-placeholder {
+    border: 0;
+    padding: 0;
+  }
+}

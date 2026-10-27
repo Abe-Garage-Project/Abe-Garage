@@ -1,0 +1,675 @@
+{
+  "endpoints": [
+    {
+      "task_id": "BE-004",
+      "method": "POST",
+      "path": "/api/auth/login",
+      "local_path": "/login",
+      "route_file": "backend/src/api/auth/routes/auth.route.js",
+      "mount_prefix": "/auth",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-005",
+      "method": "POST",
+      "path": "/api/auth/forgot-password",
+      "local_path": "/forgot-password",
+      "route_file": "backend/src/api/auth/routes/auth.route.js",
+      "mount_prefix": "/auth",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-006",
+      "method": "POST",
+      "path": "/api/auth/reset-password",
+      "local_path": "/reset-password",
+      "route_file": "backend/src/api/auth/routes/auth.route.js",
+      "mount_prefix": "/auth",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-007",
+      "method": "PATCH",
+      "path": "/api/auth/password",
+      "local_path": "/password",
+      "route_file": "backend/src/api/auth/routes/auth.route.js",
+      "mount_prefix": "/auth",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-008",
+      "method": "GET",
+      "path": "/api/profile",
+      "local_path": "/",
+      "route_file": "backend/src/api/profile/routes/profile.route.js",
+      "mount_prefix": "/profile",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-009",
+      "method": "POST",
+      "path": "/api/employees",
+      "local_path": "/",
+      "route_file": "backend/src/api/employees/routes/employee.route.js",
+      "mount_prefix": "/employees",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-010",
+      "method": "GET",
+      "path": "/api/employees",
+      "local_path": "/",
+      "route_file": "backend/src/api/employees/routes/employee.route.js",
+      "mount_prefix": "/employees",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-011",
+      "method": "GET",
+      "path": "/api/employees/:employee_id",
+      "local_path": "/:employee_id",
+      "route_file": "backend/src/api/employees/routes/employee.route.js",
+      "mount_prefix": "/employees",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-012",
+      "method": "PATCH",
+      "path": "/api/employees/:employee_id",
+      "local_path": "/:employee_id",
+      "route_file": "backend/src/api/employees/routes/employee.route.js",
+      "mount_prefix": "/employees",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-013",
+      "method": "GET",
+      "path": "/api/roles",
+      "local_path": "/",
+      "route_file": "backend/src/api/settings/routes/roles.route.js",
+      "mount_prefix": "/roles",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-014",
+      "method": "GET",
+      "path": "/api/settings",
+      "local_path": "/",
+      "route_file": "backend/src/api/settings/routes/settings.route.js",
+      "mount_prefix": "/settings",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-015",
+      "method": "PATCH",
+      "path": "/api/settings",
+      "local_path": "/",
+      "route_file": "backend/src/api/settings/routes/settings.route.js",
+      "mount_prefix": "/settings",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-016",
+      "method": "POST",
+      "path": "/api/customers",
+      "local_path": "/",
+      "route_file": "backend/src/api/customers/routes/customer.route.js",
+      "mount_prefix": "/customers",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-017",
+      "method": "GET",
+      "path": "/api/customers",
+      "local_path": "/",
+      "route_file": "backend/src/api/customers/routes/customer.route.js",
+      "mount_prefix": "/customers",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-018",
+      "method": "GET",
+      "path": "/api/customers/:customer_id",
+      "local_path": "/:customer_id",
+      "route_file": "backend/src/api/customers/routes/customer.route.js",
+      "mount_prefix": "/customers",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-019",
+      "method": "PATCH",
+      "path": "/api/customers/:customer_id",
+      "local_path": "/:customer_id",
+      "route_file": "backend/src/api/customers/routes/customer.route.js",
+      "mount_prefix": "/customers",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-020",
+      "method": "POST",
+      "path": "/api/vehicles",
+      "local_path": "/",
+      "route_file": "backend/src/api/vehicles/routes/vehicle.route.js",
+      "mount_prefix": "/vehicles",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-021",
+      "method": "GET",
+      "path": "/api/customers/:customer_id/vehicles",
+      "local_path": "/:customer_id/vehicles",
+      "route_file": "backend/src/api/customers/routes/customer.route.js",
+      "mount_prefix": "/customers",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-022",
+      "method": "GET",
+      "path": "/api/vehicles/:vehicle_id",
+      "local_path": "/:vehicle_id",
+      "route_file": "backend/src/api/vehicles/routes/vehicle.route.js",
+      "mount_prefix": "/vehicles",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-023",
+      "method": "PATCH",
+      "path": "/api/vehicles/:vehicle_id",
+      "local_path": "/:vehicle_id",
+      "route_file": "backend/src/api/vehicles/routes/vehicle.route.js",
+      "mount_prefix": "/vehicles",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-024",
+      "method": "GET",
+      "path": "/api/vehicles/:vehicle_id/orders",
+      "local_path": "/:vehicle_id/orders",
+      "route_file": "backend/src/api/vehicles/routes/vehicle.route.js",
+      "mount_prefix": "/vehicles",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-025",
+      "method": "POST",
+      "path": "/api/services",
+      "local_path": "/",
+      "route_file": "backend/src/api/services/routes/service.route.js",
+      "mount_prefix": "/services",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-026",
+      "method": "GET",
+      "path": "/api/services",
+      "local_path": "/",
+      "route_file": "backend/src/api/services/routes/service.route.js",
+      "mount_prefix": "/services",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-027",
+      "method": "PATCH",
+      "path": "/api/services/:service_id",
+      "local_path": "/:service_id",
+      "route_file": "backend/src/api/services/routes/service.route.js",
+      "mount_prefix": "/services",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-028",
+      "method": "GET",
+      "path": "/api/public/services",
+      "local_path": "/",
+      "route_file": "backend/src/api/services/routes/public-service.route.js",
+      "mount_prefix": "/public/services",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-029",
+      "method": "POST",
+      "path": "/api/orders",
+      "local_path": "/",
+      "route_file": "backend/src/api/orders/routes/order.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-030",
+      "method": "GET",
+      "path": "/api/orders",
+      "local_path": "/",
+      "route_file": "backend/src/api/orders/routes/order.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-031",
+      "method": "GET",
+      "path": "/api/orders/:order_id",
+      "local_path": "/:order_id",
+      "route_file": "backend/src/api/orders/routes/order.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-032",
+      "method": "PATCH",
+      "path": "/api/orders/:order_id",
+      "local_path": "/:order_id",
+      "route_file": "backend/src/api/orders/routes/order.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-033",
+      "method": "PATCH",
+      "path": "/api/orders/:order_id/approval",
+      "local_path": "/:order_id/approval",
+      "route_file": "backend/src/api/orders/routes/order.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-034",
+      "method": "POST",
+      "path": "/api/orders/:order_id/lines",
+      "local_path": "/:order_id/lines",
+      "route_file": "backend/src/api/orders/routes/order.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-035",
+      "method": "PATCH",
+      "path": "/api/order-lines/:line_id/technician",
+      "local_path": "/:line_id/technician",
+      "route_file": "backend/src/api/technician-jobs/routes/technician-job.route.js",
+      "mount_prefix": "/order-lines",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-036",
+      "method": "GET",
+      "path": "/api/my-jobs",
+      "local_path": "/",
+      "route_file": "backend/src/api/technician-jobs/routes/my-jobs.route.js",
+      "mount_prefix": "/my-jobs",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-037",
+      "method": "PATCH",
+      "path": "/api/order-lines/:line_id/status",
+      "local_path": "/:line_id/status",
+      "route_file": "backend/src/api/technician-jobs/routes/technician-job.route.js",
+      "mount_prefix": "/order-lines",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-038",
+      "method": "PATCH",
+      "path": "/api/order-lines/:line_id/note",
+      "local_path": "/:line_id/note",
+      "route_file": "backend/src/api/technician-jobs/routes/technician-job.route.js",
+      "mount_prefix": "/order-lines",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-039",
+      "method": "GET",
+      "path": "/api/orders/:order_id/estimate",
+      "local_path": "/:order_id/estimate",
+      "route_file": "backend/src/api/orders/routes/order.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-040",
+      "method": "POST",
+      "path": "/api/orders/:order_id/invoice",
+      "local_path": "/:order_id/invoice",
+      "route_file": "backend/src/api/billing/routes/billing.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-041",
+      "method": "GET",
+      "path": "/api/orders/:order_id/invoice",
+      "local_path": "/:order_id/invoice",
+      "route_file": "backend/src/api/billing/routes/billing.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-042",
+      "method": "PATCH",
+      "path": "/api/orders/:order_id/payment",
+      "local_path": "/:order_id/payment",
+      "route_file": "backend/src/api/billing/routes/billing.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-044",
+      "method": "GET",
+      "path": "/api/public/orders/:order_hash",
+      "local_path": "/:order_hash",
+      "route_file": "backend/src/api/tracking/routes/tracking.route.js",
+      "mount_prefix": "/public/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-045",
+      "method": "POST",
+      "path": "/api/orders/:order_id/resend-email",
+      "local_path": "/:order_id/resend-email",
+      "route_file": "backend/src/api/tracking/routes/order-notification.route.js",
+      "mount_prefix": "/orders",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-046",
+      "method": "GET",
+      "path": "/api/dashboard",
+      "local_path": "/",
+      "route_file": "backend/src/api/dashboard/routes/dashboard.route.js",
+      "mount_prefix": "/dashboard",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-047",
+      "method": "POST",
+      "path": "/api/install",
+      "local_path": "/install",
+      "route_file": "backend/src/api/setup/routes/setup.route.js",
+      "mount_prefix": "/",
+      "implemented": false
+    },
+    {
+      "task_id": "BE-048",
+      "method": "GET",
+      "path": "/api/health",
+      "local_path": "/health",
+      "route_file": "backend/src/api/setup/routes/setup.route.js",
+      "mount_prefix": "/",
+      "implemented": true
+    }
+  ],
+  "modules": [
+    "auth",
+    "billing",
+    "customers",
+    "dashboard",
+    "employees",
+    "orders",
+    "profile",
+    "services",
+    "settings",
+    "setup",
+    "technician-jobs",
+    "tracking",
+    "vehicles"
+  ],
+  "frontend_pages": [
+    {
+      "feature": "public",
+      "component": "Home",
+      "path": "/"
+    },
+    {
+      "feature": "public",
+      "component": "About",
+      "path": "/about"
+    },
+    {
+      "feature": "public",
+      "component": "Contact",
+      "path": "/contact"
+    },
+    {
+      "feature": "public",
+      "component": "Services",
+      "path": "/services"
+    },
+    {
+      "feature": "auth",
+      "component": "Login",
+      "path": "/login"
+    },
+    {
+      "feature": "auth",
+      "component": "ForgotPassword",
+      "path": "/forgot-password"
+    },
+    {
+      "feature": "auth",
+      "component": "ResetPassword",
+      "path": "/reset-password"
+    },
+    {
+      "feature": "tracking",
+      "component": "OrderStatus",
+      "path": "/order-status/:order_hash"
+    },
+    {
+      "feature": "errors",
+      "component": "Unauthorized",
+      "path": "/unauthorized"
+    },
+    {
+      "feature": "errors",
+      "component": "NotFound",
+      "path": "*"
+    },
+    {
+      "feature": "dashboard",
+      "component": "Dashboard",
+      "path": "/admin"
+    },
+    {
+      "feature": "employees",
+      "component": "EmployeeList",
+      "path": "/admin/employees"
+    },
+    {
+      "feature": "employees",
+      "component": "AddEmployee",
+      "path": "/admin/employee/new"
+    },
+    {
+      "feature": "employees",
+      "component": "EditEmployee",
+      "path": "/admin/employee/:employee_id/edit"
+    },
+    {
+      "feature": "customers",
+      "component": "CustomerList",
+      "path": "/admin/customers"
+    },
+    {
+      "feature": "customers",
+      "component": "AddCustomer",
+      "path": "/admin/customer/new"
+    },
+    {
+      "feature": "customers",
+      "component": "EditCustomer",
+      "path": "/admin/customer/:customer_id/edit"
+    },
+    {
+      "feature": "customers",
+      "component": "CustomerProfile",
+      "path": "/admin/customer/:customer_id"
+    },
+    {
+      "feature": "vehicles",
+      "component": "AddVehicle",
+      "path": "/admin/customer/:customer_id/vehicle/new"
+    },
+    {
+      "feature": "vehicles",
+      "component": "EditVehicle",
+      "path": "/admin/vehicle/:vehicle_id/edit"
+    },
+    {
+      "feature": "vehicles",
+      "component": "VehicleDetails",
+      "path": "/admin/vehicle/:vehicle_id"
+    },
+    {
+      "feature": "services",
+      "component": "ServiceManagement",
+      "path": "/admin/services"
+    },
+    {
+      "feature": "orders",
+      "component": "OrderList",
+      "path": "/admin/orders"
+    },
+    {
+      "feature": "orders",
+      "component": "NewOrder",
+      "path": "/admin/order/new"
+    },
+    {
+      "feature": "orders",
+      "component": "OrderDetails",
+      "path": "/admin/order/:order_id"
+    },
+    {
+      "feature": "jobs",
+      "component": "MyJobs",
+      "path": "/admin/my-jobs"
+    },
+    {
+      "feature": "billing",
+      "component": "Estimate",
+      "path": "/admin/order/:order_id/estimate"
+    },
+    {
+      "feature": "billing",
+      "component": "Invoice",
+      "path": "/admin/order/:order_id/invoice"
+    },
+    {
+      "feature": "settings",
+      "component": "GarageSettings",
+      "path": "/admin/settings"
+    },
+    {
+      "feature": "profile",
+      "component": "MyAccount",
+      "path": "/admin/profile"
+    }
+  ],
+  "routing": {
+    "entry": "backend/index.js",
+    "main": "backend/src/api/routes.js",
+    "mounts": [
+      {
+        "name": "auth",
+        "file": "auth/routes/auth.route.js",
+        "prefix": "/auth",
+        "ids": ["BE-004", "BE-005", "BE-006", "BE-007"]
+      },
+      {
+        "name": "profile",
+        "file": "profile/routes/profile.route.js",
+        "prefix": "/profile",
+        "ids": ["BE-008"]
+      },
+      {
+        "name": "employees",
+        "file": "employees/routes/employee.route.js",
+        "prefix": "/employees",
+        "ids": ["BE-009", "BE-010", "BE-011", "BE-012"]
+      },
+      {
+        "name": "settings",
+        "file": "settings/routes/settings.route.js",
+        "prefix": "/settings",
+        "ids": ["BE-014", "BE-015"]
+      },
+      {
+        "name": "roles",
+        "file": "settings/routes/roles.route.js",
+        "prefix": "/roles",
+        "ids": ["BE-013"]
+      },
+      {
+        "name": "customers",
+        "file": "customers/routes/customer.route.js",
+        "prefix": "/customers",
+        "ids": ["BE-016", "BE-017", "BE-018", "BE-019", "BE-021"]
+      },
+      {
+        "name": "vehicles",
+        "file": "vehicles/routes/vehicle.route.js",
+        "prefix": "/vehicles",
+        "ids": ["BE-020", "BE-022", "BE-023", "BE-024"]
+      },
+      {
+        "name": "services",
+        "file": "services/routes/service.route.js",
+        "prefix": "/services",
+        "ids": ["BE-025", "BE-026", "BE-027"]
+      },
+      {
+        "name": "publicServices",
+        "file": "services/routes/public-service.route.js",
+        "prefix": "/public/services",
+        "ids": ["BE-028"]
+      },
+      {
+        "name": "orders",
+        "file": "orders/routes/order.route.js",
+        "prefix": "/orders",
+        "ids": ["BE-029", "BE-030", "BE-031", "BE-032", "BE-033", "BE-034", "BE-039"]
+      },
+      {
+        "name": "technicianJobs",
+        "file": "technician-jobs/routes/technician-job.route.js",
+        "prefix": "/order-lines",
+        "ids": ["BE-035", "BE-037", "BE-038"]
+      },
+      {
+        "name": "myJobs",
+        "file": "technician-jobs/routes/my-jobs.route.js",
+        "prefix": "/my-jobs",
+        "ids": ["BE-036"]
+      },
+      {
+        "name": "billing",
+        "file": "billing/routes/billing.route.js",
+        "prefix": "/orders",
+        "ids": ["BE-040", "BE-041", "BE-042"]
+      },
+      {
+        "name": "tracking",
+        "file": "tracking/routes/tracking.route.js",
+        "prefix": "/public/orders",
+        "ids": ["BE-044"]
+      },
+      {
+        "name": "orderNotifications",
+        "file": "tracking/routes/order-notification.route.js",
+        "prefix": "/orders",
+        "ids": ["BE-045"]
+      },
+      {
+        "name": "dashboard",
+        "file": "dashboard/routes/dashboard.route.js",
+        "prefix": "/dashboard",
+        "ids": ["BE-046"]
+      },
+      {
+        "name": "setup",
+        "file": "setup/routes/setup.route.js",
+        "prefix": "/",
+        "ids": ["BE-047", "BE-048"]
+      }
+    ]
+  }
+}

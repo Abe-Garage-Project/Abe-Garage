@@ -1,0 +1,114 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #14203c;
+  background: #f5f6f9;
+}
+body {
+  margin: 0;
+}
+a {
+  color: #173a78;
+}
+button,
+input,
+select {
+  min-height: 44px;
+}
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 2rem;
+  background: white;
+  border-bottom: 1px solid #dde1e9;
+}
+.site-header nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.brand {
+  color: #df251c;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.brand span {
+  color: #0d1b42;
+}
+.public-content,
+.staff-content {
+  padding: 2rem;
+  min-height: 75vh;
+}
+.staff-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+}
+.admin-menu {
+  padding: 1rem;
+  background: #17213d;
+}
+.admin-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.admin-menu a {
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}
+.admin-menu a.active {
+  background: #334369;
+}
+.page-placeholder {
+  max-width: 1000px;
+  padding: 2rem;
+  background: white;
+  border: 1px solid #e0e4ec;
+  border-radius: 0.5rem;
+}
+.eyebrow {
+  color: #777;
+  font-size: 0.9rem;
+}
+.site-footer {
+  padding: 1.5rem 2rem;
+  background: #0d1b42;
+  color: white;
+}
+.print-document {
+  max-width: 210mm;
+  margin: 1rem auto;
+  padding: 15mm;
+  background: white;
+}
+@media (max-width: 767px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .staff-layout {
+    grid-template-columns: 1fr;
+  }
+  .admin-menu nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .public-content,
+  .staff-content {
+    padding: 1rem;
+  }
+  .page-placeholder {
+    padding: 1rem;
+  }
+}

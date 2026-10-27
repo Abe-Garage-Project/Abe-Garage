@@ -1,0 +1,5 @@
+# Replace placeholders with your real GitHub usernames, then rename to CODEOWNERS.
+# /backend/src/api/auth/ @member1
+# /backend/src/api/customers/ @member2
+# /backend/src/api/orders/ @member3
+# /backend/src/api/billing/ @member4
